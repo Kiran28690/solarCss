@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solar system</title>
+    <style>
+        body{
+            background-image: url('./img/solar.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sun{
+            background-image: url('./img/sun.png');
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            margin: 350px auto;
+            position: relative;
+        }
+        .mercury{
+            background-image: url('./img/mercury.png');
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            position: absolute;
+            bottom: 25px;
+            right: -60px;
+            transform-origin: -108px 0;
+            animation-name: mercuryAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-play-state:paused;
+        }
+        @keyframes mercuryAnimation {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(359deg);
+            }
+        }
+        .venus{
+            background-image: url('./img/venus.png');
+            width: 70px;
+            height: 70px;
+            background-size: cover;
+            position: absolute;
+            right: -100px;
+            bottom: 100px;
+            animation-name: venusAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform-origin: -220px 0;
+            animation-play-state:paused;
+        }
+        @keyframes venusAnimation {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(359deg);
+            }
+        }
+        .earth{
+            background-image: url('./img/earth.png');
+            width: 90px;
+            height: 90px;
+            background-size: cover;
+            position: absolute;
+            bottom: 25px;
+            right: -240px;
+            animation-name: venusAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform-origin: -300px 0;
+            animation-play-state:paused ;
+        }
+        .moon{
+            background-image: url('./img/moon.png');
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            position: absolute;
+            top: -25px;
+            /* animation-name: moonAnimation; */
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes moonAnimation {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(359deg);
+            }
+        }
+        .mars{
+            background-image: url('./img/mars.png');
+            width: 70px;
+            height: 70px;
+            background-size: cover;
+            position: absolute;
+            bottom: 170px;
+            right: -230px;
+        }
+        .jupiter{
+            background-image: url('./img/jupiter.png');
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            position: absolute;
+            bottom: 100px;
+            right: -370px;
+        }
+        .saturn{
+            background-image: url('./img/saturn.png');
+            width: 150px;
+            height: 80px;
+            background-size: cover;
+            position: absolute;
+            bottom: 10px;
+            right: -500px;
+        }
+        .uranus{
+            background-image: url('./img/neptune.png');
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            position: absolute;
+            bottom: 200px;
+            right: -500px;
+        }
+        .neptune{
+            background-image: url('./img/uranus.png');
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            position: absolute;
+            bottom: 120px;
+            right: -600px;
+        }
+        .pluto{
+            background-image: url('./img/pluto.png');
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            position: absolute;
+            bottom: 250px;
+            right: -650px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <div class="mercury"></div>
+        <div class="venus"></div>
+        <div class="earth">
+            <div class="moon"></div>
+        </div>
+        <div class="mars"></div>
+        <div class="jupiter"></div>
+        <div class="saturn"></div>
+        <div class="uranus"></div>
+        <div class="neptune"></div>
+        <div class="pluto"></div>
+    </div>
+</body>
+</html>
